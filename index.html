@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weekday</title>
+    <!--      CSS     -->
+    <link rel="stylesheet" href="css/style.css">
+    <!--      JS     -->
+    <!-- Google Font Link for Icons -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
+    <script src="js/calendario.js" defer></script>
+    
+</head>
+<body>
+    <div class="container">
+        <div class="weekday">
+            <h1 id="fraseMotivadora">
+                <script src="js/weekday.js"></script>
+            </h1>
+        </div>
+        <div class="calendarioBox">
+            <div class="wrapper">
+                <header>
+                    <!-- Fecha Actual -->
+                    <p class="current-date"></p> 
+                </header>
+                <div class="calendar">
+                    <ul class="weeks">
+                        <li>D</li>
+                        <li>L</li>
+                        <li>M</li>
+                        <li>X</li>
+                        <li>J</li>
+                        <li>V</li>
+                        <li>S</li>
+                    </ul>
+                    <ul class="days">
+                        <!-- Los 'li' se añaden por js -->
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

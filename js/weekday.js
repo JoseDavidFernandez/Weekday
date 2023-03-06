@@ -1,0 +1,36 @@
+/* -- FRASE MOTIVADORAS EJEMPLOS: 
+    –––––––––––––––––––––––––––––––––––––––––––––––––– 
+    
+    LUNES:      FELIZ LUNES. VAMOS A EMPEZAR LA SEMANA CON ENERGIA!!
+    MARTES:     FELIZ MARTES. A DISFRUTAR!
+    MIERCOLES:  FELIZ MIÉRCOLES. NO QUEDA NADA PARA EL FIN DE SEMANA!
+    JUEVES:     FELIZ JUEVES. ULTIMO EMPUJÓN!!"; 
+    VIERNES:    FELIZ VIERNES. GOO!! POR FIN EMPIEZA EL FIN DE SEMANA! A FULL!!
+    SABADO:     FELIZ SÁBADO. VAMOS A DESCONECTAR DE LA SEMANA!
+    DOMINGO:    FELIZ DOMINGO. VAMOS A RECAGAR PILAS PARA LA PROXIMA SEMANA Y EMPEZAR CON GANAS
+    
+    
+    */
+
+
+
+/* -- Creamos variable fecha --  */
+var fecha = new Date(); 
+
+/* -- Creamos variable semana con array  --  */
+var semana = new Array(); 
+semana[0] = "FELIZ DOMINGO. VAMOS A RECAGAR PILAS PARA LA PROXIMA SEMANA Y EMPEZAR CON GANAS "; 
+semana[1] = "FELIZ LUNES. VAMOS A EMPEZAR LA SEMANA CON ENERGIA!! "; 
+semana[2] = "FELIZ MARTES. A DISFRUTAR!"; 
+semana[3] = "FELIZ MIÉRCOLES. NO QUEDA NADA PARA EL FIN DE SEMANA! "; 
+semana[4] = "FELIZ JUEVES. ULTIMO EMPUJÓN!!"; 
+semana[5] = "FELIZ VIERNES. GOO!! POR FIN EMPIEZA EL FIN DE SEMANA! A FULL!!"; 
+semana[6] = "FELIZ SÁBADO. VAMOS A DESCONECTAR DE LA SEMANA!"; 
+
+
+
+
+document.write(semana[fecha.getDay()]);
+
+
+
