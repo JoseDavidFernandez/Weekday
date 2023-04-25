@@ -1,0 +1,86 @@
+*{  margin: 0; padding: 0; }
+body{ border: 20px solid white; }
+.container{ background: #3a3e4a; }
+
+
+/* DIV -> WEEKDAY
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.weekday {
+    width: 100%;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/*  -------- WEEKDAY: FRASE MOTIVADORA --------    */
+#fraseMotivadora{ text-align: center; color:  #fff;; }
+
+/* DIV -> CALENDARIO
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.calendarioBox{
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+    justify-content: center;
+    min-height: 80vh;
+    background: #787d8c ;
+}
+.wrapper{
+    width: 450px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.12);
+}
+/*  -------- CALENDARIO: HEADER --------    */
+.wrapper header{
+    text-align: center;
+    padding: 25px 30px 10px;
+}
+header .current-date{
+    font-size: 1.45rem;
+    font-weight: 500;
+}
+/*  -------- CALENDARIO: CALENDAR --------    */
+.calendar{ padding: 20px; }
+.calendar ul{
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    text-align: center;
+}
+.calendar li{
+    color: #333;
+    width: calc(100% / 7);
+    font-size: 1.07rem;
+}
+.calendar .weeks li{
+    font-weight: 500;
+    cursor: default;
+}
+.calendar .days{ margin-bottom: 20px; }
+.calendar .days li{
+    z-index: 1;
+    cursor: pointer;
+    position: relative;
+    margin-top: 30px;
+}
+/* -- CAMBIO color resalto dias no mes -- */
+.days li.inactive{ color: #aaa; }
+/* -- RESALTO color para el día actual --  */
+.days li.active{ color: #fff; }
+.days li::before{
+    position: absolute;
+    content: "";
+    left: 50%;
+    top: 50%;
+    height: 40px;
+    width: 40px;
+    z-index: -1;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+}
+.days li.active::before{ background: #3a3e4a; }
+.days li:not(.active):hover::before{ background: #fff; }
+
+
+
